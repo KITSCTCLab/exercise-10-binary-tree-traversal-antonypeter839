@@ -15,7 +15,11 @@ def insert(root, new_value) -> BinaryTreeNode:
 
 
 def inorder(root) -> None:
-    # Write your code here
+    if flag is True:
+        root = insert(None, int(item))
+        flag = False
+    else:
+        insert(root, int(item))
 
 
 def preorder(root) -> None:
