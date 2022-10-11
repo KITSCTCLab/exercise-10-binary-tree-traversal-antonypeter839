@@ -32,6 +32,11 @@ def preorder(root) -> None:
 
 def postorder(root) -> None:
     # Write your code here
+    if flag is True:
+        root = insert(None, int(item))
+        flag = False
+    else:
+        insert(root, int(item))
 
 
 # Do not change the following code
