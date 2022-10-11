@@ -23,7 +23,11 @@ def inorder(root) -> None:
 
 
 def preorder(root) -> None:
-    # Write your code here
+  if flag is True:
+        root = insert(None, int(item))
+        flag = False
+    else:
+        insert(root, int(item))
 
 
 def postorder(root) -> None:
